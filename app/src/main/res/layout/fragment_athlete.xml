@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/firstname"
+        android:layout_width="104dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Надл Дадл"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/profile"
+        app:layout_constraintStart_toEndOf="@+id/avatar_image"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/followers"
+        android:layout_width="87dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="16dp"
+        android:text="Подписчики"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@+id/profile"
+        tools:layout_editor_absoluteX="291dp" />
+
+    <TextView
+        android:id="@+id/describes"
+        android:layout_width="88dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Подписки"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/avatar_image"
+        app:layout_constraintTop_toBottomOf="@+id/profile" />
+
+    <TextView
+        android:id="@+id/count_subscribes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="556dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/count_followers"
+        app:layout_constraintStart_toEndOf="@+id/avatar_image"
+        app:layout_constraintTop_toBottomOf="@+id/describes"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/count_followers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="TextView"
+        app:layout_constraintTop_toBottomOf="@+id/followers"
+        tools:layout_editor_absoluteX="291dp" />
+
+    <ImageView
+        android:id="@+id/avatar_image"
+        android:layout_width="171dp"
+        android:layout_height="159dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.027"
+        app:srcCompat="@drawable/no_face" />
+
+<!--    <Button-->
+<!--        android:id="@+id/profile"-->
+<!--        android:layout_width="142dp"-->
+<!--        android:layout_height="38dp"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:text="Тренировки"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/avatar_image"-->
+<!--        app:srcCompat="@android:drawable/ic_menu_myplaces"-->
+<!--        tools:layout_editor_absoluteY="61dp" />-->
+
+        <ImageButton
+            android:id="@+id/profile"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="58dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginBottom="624dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/avatar_image"
+            app:srcCompat="@android:drawable/ic_menu_myplaces" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

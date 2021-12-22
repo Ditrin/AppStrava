@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Strava ver1</string>
+    <string name="hello_dude">Hello Dude!</string>
+    <string name="todo">TODO</string>
+    <string name="skip">Skip</string>
+    <string name="email">e-mail</string>
+    <string name="button">Login</string>
+    <string name="no_account_yet_create_one">No account yet? Create one</string>
+    <string name="password">Password</string>
+    <string name="text1">Forget the way everyone who enters here</string>
+    <string name="name">Name</string>
+    <string name="publication_date">Date</string>
+    <string name="item_head">What plans?</string>
+    <string name="text2">Name</string>
+    <string name="count_num">0</string>
+    <string name="button_oauth">TODO</string>
+    <string name="push">Failed</string>
+    <string name="authCodeFailed">Code failed</string>
+    <string name="distance">distance</string>
+    <string name="time">time</string>
+</resources>

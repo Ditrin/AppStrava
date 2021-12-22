@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/onBoardingFragment">
+    <fragment
+        android:id="@+id/onBoardingFragment"
+        tools:layout="@layout/fragment_onboarding"
+        android:name="com.example.stravaver1.OnBoardingFragment"
+        android:label="onBoardingFragment" >
+        <action
+            android:id="@+id/action_onBoardingFragment_to_OauthFragment"
+            app:destination="@id/OauthFragment"
+            app:popUpTo="@id/onBoardingFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_onBoardingFragment_to_AthleteFragment"
+            app:destination="@id/athleteFragment"
+            app:popUpTo="@id/onBoardingFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/OauthFragment"
+        tools:layout="@layout/fragment_oauth"
+        android:name="com.example.stravaver1.Oauth.OauthFragment"
+        android:label="OauthFragment" >
+        <action
+            android:id="@+id/action_OauthFragment_to_AthleteFragment"
+            app:destination="@id/athleteFragment"
+            app:popUpTo="@id/onBoardingFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+
+    <!--    <fragment-->
+    <!--        android:id="@+id/loginFragment"-->
+    <!--        tools:layout="@layout/fragment_login"-->
+    <!--        android:name="com.example.stravaver1.AuthorizationFragment"-->
+    <!--        android:label="loginFragment" >-->
+    <!--&lt;!&ndash;        <argument&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:name="user_id"&ndash;&gt;-->
+    <!--&lt;!&ndash;            app:argType="long"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:defaultValue="0L" />&ndash;&gt;-->
+    <!--        <action-->
+    <!--            android:id="@+id/action_OauthFragment_to_RecycleViewFragment"-->
+    <!--            app:destination="@id/secondFragment"-->
+    <!--            app:popUpTo="@id/onBoardingFragment"-->
+    <!--            app:popUpToInclusive="true" />-->
+    <!--    </fragment>-->
+    <fragment
+        android:id="@+id/secondFragment"
+        tools:layout="@layout/fragment_list"
+        android:name="com.example.stravaver1.networking.user.UserGetFragment"
+        android:label="RecycleViewFragment" >
+    </fragment>
+    <fragment
+        android:id="@+id/athleteFragment"
+        tools:layout="@layout/fragment_athlete"
+        android:name="com.example.stravaver1.networking.user.athlete.AthleteFragment"
+        android:label="athleteFragment" >
+
+        <action
+            android:id="@+id/action_AthleteFragment_to_secondFragment"
+            app:destination="@id/secondFragment"
+            app:popUpTo="@id/onBoardingFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

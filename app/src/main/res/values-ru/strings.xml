@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Strava ver1</string>
+    <string name="hello_dude">Привет, чувак!</string>
+    <string name="todo">TODO</string>
+    <string name="skip">Пропустить</string>
+    <string name="email">почта</string>
+    <string name="button">Войти</string>
+    <string name="no_account_yet_create_one">Нет аккаунта? Зарегистрироваться</string>
+    <string name="password">Пароль</string>
+    <string name="text1">Забудь дорогу всяк сюда входящий</string>
+    <string name="text2" translatable="false">Имя</string>
+    <string name="name">" Имя"</string>
+    <string name="item_head">Какие планы?</string>
+    <string name="publication_date">Дата</string>
+    <string name="count_num">0</string>
+    <string name="button_oauth">todo</string>
+    <string name="push">Все упало Наташа</string>
+    <string name="authCodeFailed">Code failed</string>
+    <string name="distance">расстояние</string>
+    <string name="time">время</string>
+</resources>
